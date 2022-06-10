@@ -11,10 +11,10 @@ fn check_permutation_sort(string1: &str, string2: &str) -> bool {
     }
 
     let mut string1: Vec<_> = string1.chars().collect();
-    string1.sort();
+    string1.sort_unstable();
 
     let mut string2: Vec<_> = string2.chars().collect();
-    string2.sort();
+    string2.sort_unstable();
 
     string1 == string2
 }
